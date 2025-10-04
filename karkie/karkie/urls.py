@@ -17,9 +17,9 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
-from bmiapp import views
-
-urlpatterns = [
+from myapp import views
+urlpatterns =[
     path('admin/', admin.site.urls),
-    path('', views.calculate_bmi, name='calculate_bmi'),
+    path('Body Mass Index/',views.calculate_BMI,name="Body Mass Index"),
+    path('',views.calculate_BMI,name="Body Mass Index")
 ]
